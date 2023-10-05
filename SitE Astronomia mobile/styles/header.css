@@ -1,0 +1,47 @@
+.cabeçalho__menu-astronomia {
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/Menu.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.cabeçalho{
+    background-color:var(--azul);
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem{
+    padding: 1em;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 10%;
+    width: 60vw;
+}
+
+.container__botao:checked ~ .lista-menu{
+    display: block;
+}
+.lista-menu__titulo,
+.lista-menu__item{
+    padding: 1em;
+    background-color: var(--azul);
+}
+.lista-menu__titulo{
+    color: var(--laranja)
+}
+.lista-menu__link{
+    color: var(--branco);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparents;
+    text-transform: uppercase;
+}
