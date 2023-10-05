@@ -1,3 +1,8 @@
+html{
+    margin: 0;
+    padding: 0;
+    
+}
 .cabeçalho__menu-astronomia {
     width: 25px;
     height: 25px;
@@ -10,11 +15,13 @@
     background-color:var(--azul);
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .container{
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .container__imagem{
@@ -24,7 +31,9 @@
 .lista-menu{
     display: none;
     position: absolute;
-    top: 10%;
+    
+    padding: 0;
+    top: 80px;
     width: 60vw;
 }
 
@@ -44,4 +53,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparents;
     text-transform: uppercase;
+}
+li{
+    list-style-type: none;
+}
+#menu{
+    all: unset;
 }
