@@ -31,6 +31,7 @@ html{
 .lista-menu{
     display: none;
     position: absolute;
+    font-weight: 500;
     
     padding: 0;
     top: 80px;
@@ -53,10 +54,38 @@ html{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparents;
     text-transform: uppercase;
+    background-clip: text;
 }
 li{
     list-style-type: none;
 }
 #menu{
     all: unset;
+}
+.container__botao{
+    display: none;
+}
+
+.banner{
+width: 100vw;
+display: flex;
+justify-content: center;
+}
+
+.banner__titulo{
+    border: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    width: 75vw;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-radius: 25px;
+    align-items: center;
+    color: white;
+}
+
+.banner__titulo img{
+    width: 255px;
+    height: 181px;
 }
